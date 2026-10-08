@@ -15,3 +15,11 @@ for (int i = 0; i < 3; i++)
     Console.WriteLine();
     Lista.Add( aktualis );
 }
+Console.WriteLine("Rögzített könyvek listája:");
+int osszesold = 0;
+for  (int i = 0;i < 3;i++)
+{
+    Console.WriteLine($"\t-{Lista[i].Cim} ({Lista[i].Szerzo}) - {Lista[i].Oldalszam} oldal ");
+    osszesold += Lista[i].Oldalszam;
+}
+Console.WriteLine($"\tÖsszesen elolvasandó: {osszesold} oldal");
